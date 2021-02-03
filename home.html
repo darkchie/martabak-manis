@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Manis</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <section>
+        <header>
+            <div class="logo">
+                AStabak
+            </div>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h2>More <span>BIG</span></h2>
+            <h2>More <span>CHEAP</span></h2>
+            <h2>More <span>DELICIOUS</span></h2>
+        </div>
+        <div class="tombol">
+            <button class="btn">Explore</button>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="instagram"></a></li>
+        </ul>
+        <footer>
+            <p class="copyright">Modify by AsjCoding.</p>
+            <p class="social">copyright &copy; 2021 AsjCoding.</p>
+        </footer>
+    </section>
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const nav = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
